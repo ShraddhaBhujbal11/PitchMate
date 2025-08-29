@@ -1,56 +1,107 @@
 .dialog-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.45);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999;
+  backdrop-filter: blur(3px);
 }
 
 .dialog-box {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 500px;
+  background: #fff;
+  padding: 32px 28px;
+  border-radius: 30px;
+  max-width: 480px;
   width: 100%;
   text-align: center;
   position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.25s ease-out;
+}
+
+.dialog-box h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 14px;
+}
+
+.dialog-box p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 24px;
 }
 
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 14px;
+  right: 18px;
   background: none;
   border: none;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #555;
   cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #000;
 }
 
 .checkbox {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #444;
 }
 
-.next-btn {
-  background-color: #ccc; /* gray when disabled */
-  color: #666;
-  cursor: not-allowed;
-  border: none;
-}
-
-
-
-.next-btn.active {
-  background-color: #4caf50; /* green when active */
-  color: white;
+.checkbox input[type="checkbox"] {
+  accent-color: #3b82f6; /* modern blue checkmark */
+  width: 18px;
+  height: 18px;
   cursor: pointer;
 }
-
-.next-btn.active::after {
-  content: ""; /* remove the warning icon when active */
+.next-btn {
+  margin-top: 28px;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 999px; /* pill shape */
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
 }
 
+.next-btn.disabled {
+  background-color: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.next-btn.active {
+  background-color: #3b82f6;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+}
+
+.next-btn.active:hover {
+  background-color: #2563eb;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

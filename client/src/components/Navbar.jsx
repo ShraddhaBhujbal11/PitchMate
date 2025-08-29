@@ -29,10 +29,15 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
+          <Link to="/HowItWorks" className="nav-link">
           How it works <MdKeyboardArrowDown className="icon" />
+          </Link>
+          
         </li>
         <li>
+          
           Events <MdKeyboardArrowDown className="icon" />
+          
         </li>
         <li>
           About <MdKeyboardArrowDown className="icon" />
