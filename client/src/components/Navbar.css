@@ -1,0 +1,94 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #f9f9f9;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center; /* align logo and search bar vertically */
+  gap: 20px; /* space between PitchMate and search bar */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  align-items:center;
+}
+
+.logo span {
+  color: #4169e1;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 24px;
+  padding: 8px 16px;
+  margin-left: 24px;
+  min-width: 250px;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 8px;
+}
+
+.search-icon {
+  color: #888;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.navbar-menu li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #999;
+  cursor: pointer;
+
+}
+
+.navbar-menu li.active {
+  color: #222;
+}
+
+.navbar-menu .icon {
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.nav-link {
+  color: inherit;       /* same color as surrounding text */
+  text-decoration: none; /* remove underline */
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link:hover {
+  opacity: 0.85; /* subtle hover effect */
+}
+
+
+.profile-image img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}

@@ -1,0 +1,56 @@
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.dialog-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.checkbox {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.next-btn {
+  background-color: #ccc; /* gray when disabled */
+  color: #666;
+  cursor: not-allowed;
+  border: none;
+}
+
+
+
+.next-btn.active {
+  background-color: #4caf50; /* green when active */
+  color: white;
+  cursor: pointer;
+}
+
+.next-btn.active::after {
+  content: ""; /* remove the warning icon when active */
+}
+

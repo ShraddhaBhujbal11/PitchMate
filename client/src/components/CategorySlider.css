@@ -1,0 +1,68 @@
+/* src/components/CategorySlider.css
+.category-slider {
+  display: flex;
+  overflow-x: auto;
+  padding: 16px 32px;
+  gap: 16px;
+  background: #fff;
+  box-shadow: inset 0 -1px 0 #e0e0e0;
+}
+
+.category-pill {
+  white-space: nowrap;
+  background-color: #f2f2f2;
+  border-radius: 24px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.category-pill:hover {
+  background-color: #e0e0e0;
+} */
+
+.category-wrapper {
+  padding: 16px 20px;
+  background-color: #f9f9f9;
+  overflow-x: auto;
+}
+
+.category-slider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.filter-icon {
+  font-size: 14px;
+  color: #555;
+}
+
+.category-pill {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: white;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}

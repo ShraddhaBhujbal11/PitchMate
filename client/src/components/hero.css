@@ -1,0 +1,58 @@
+/* HeroSection.css */
+
+.hero-section {
+  width: 100%;
+  height: 400px; /* Reduced from 100vh to a smaller fixed height */
+  background-image: url('C:\Users\admin\OneDrive\Desktop\pitchmate-project\img1.webp'); /* Add your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 40px; /* More curved corners */
+  overflow: hidden; /* Ensures child content stays within curves */
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 80px;
+}
+
+.hero-content {
+  color: white;
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 0px;
+  left: 10px;
+  padding: 5px 10px;
+  font-family: 'Inter', sans-serif;
+  text-align:left;
+}
+
+.hero-button {
+   position: absolute;     
+  bottom: 30px;           
+  left: 30px; 
+  padding: 10px 24px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #2c3e9f;
+}

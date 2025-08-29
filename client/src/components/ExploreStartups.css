@@ -1,0 +1,42 @@
+.explore-startups-section {
+  padding: 2rem;
+}
+
+.explore-startups-section h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  font-family: 'Inter', sans-serif;
+  
+}
+
+.startup-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding-bottom: 1rem;
+}
+
+.startup-card {
+  min-width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.startup-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.startup-title {
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,69 @@
+/* Modal background overlay */
+.nda-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* dark transparent backdrop */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal box */
+.nda-modal-content {
+  background-color: white;
+  border-radius: 32px; /* smooth rounded corners */
+  padding: 40px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Close button (X) */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Heading */
+.nda-modal-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.nda-modal-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* "View NDA" Button */
+.nda-view-btn {
+  background-color: #3d4cc3; /* blue button */
+  color: white;
+  font-size: 16px;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nda-view-btn:hover {
+  background-color: #2e3ab3;
+}
