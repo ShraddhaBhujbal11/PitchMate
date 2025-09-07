@@ -1,0 +1,98 @@
+.founder-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 32px;
+  background-color: #fafafa;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.founder-navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.founder-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+
+.founder-logo span {
+  color: #4169e1;
+}
+
+.founder-search-box {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 24px;
+  padding: 8px 30px;
+  margin-left: 30px;
+  width: 350px;
+  cursor: pointer;
+}
+
+.founder-search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.founder-search-icon {
+  color: #888;
+}
+
+.founder-navbar-menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.founder-navbar-menu li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #999;
+  cursor: pointer;
+  font-size: small;
+}
+
+.founder-navbar-menu li.active {
+  color: #222;
+}
+
+.founder-navbar-menu .founder-icon {
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.founder-nav-link {
+  color: #999;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s ease-in-out;
+}
+
+.founder-nav-link.active {
+  color: #000;
+}
+
+.founder-nav-link:hover {
+  opacity: 0.85;
+}
+
+.founder-profile-image img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}

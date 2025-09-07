@@ -1,0 +1,68 @@
+.investors-section {
+  padding: 2rem;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.investors-list {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+
+  /* Hide scrollbar but keep scrolling functional */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+.investors-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.investors-card {
+  display: flex;
+  min-width: 600px;
+  background: #fafafa;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  height: 280px;
+}
+
+.investors-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.investors-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.investors-name {
+  margin-top:10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.investors-details-btn {
+  margin-top: 1rem;
+  background-color: #3949ab;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.investors-details-btn:hover {
+  background-color: #2c387e;
+}

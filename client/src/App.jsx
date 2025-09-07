@@ -10,14 +10,18 @@ import Events from "./pages/Events";
 import About from "./pages/About";
 import Landing from "./pages/Landing";
 import Startup from "./pages/Startup";
+import Homef from "./pages/Homef";
+import FounderProfile from "./pages/FounderProfile";
 
 
 function App() {
   return (
     <Routes>
       <Route path="/home" element={<Home />} />
+       <Route path="/homef" element={<Homef />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/founderprofile" element={<FounderProfile />} />
       <Route path="/network" element={<Network />} />
       <Route path="/groups" element={<GroupsPage />} />
       <Route path="/howitworks" element={< HowItWorks/>} />
