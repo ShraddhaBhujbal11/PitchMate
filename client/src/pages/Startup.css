@@ -1,0 +1,341 @@
+/* Upvotes bar */
+.upvotes-bar {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.bookmark {
+  font-size: 16px;
+  margin-right: 6px;
+  margin-left:50px;
+}
+
+/* Banner full width */
+.startup-banner {
+  position: relative;
+  width: 100vw;       /* full viewport width */
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%); /* ensures full bleed */
+}
+
+.startup-banner-img {
+  width: 100%;
+  height: 320px;      /* adjust to your screenshot */
+  object-fit: cover;
+  display: block;
+  border-radius: 0;   /* no rounded corners */
+}
+
+/* Founder overlay (circular profile overlapping banner) */
+.founder-overlay {
+  position: absolute;
+  bottom: -50px;      /* overlap below banner */
+  right: 40px;        /* right corner */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.founder-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 4px solid #fff;  /* white ring */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  object-fit: cover;
+}
+
+.founder-name {
+  margin-top: 6px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: underline;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+/* Startup intro text */
+.startup-intro {
+  margin-top: 4rem; /* extra push to clear overlay */
+  padding: 1rem 0;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.startup-intro h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.startup-intro p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.interest-btn {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #005fccd2, #00376e);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.interest-btn:hover {
+  background: linear-gradient(135deg, #005ecc, #0099cc);
+  transform: translateY(-2px);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  margin-top:50px;
+  margin-left:100px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  gap:70px;
+}
+
+.tabs span {
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #666;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+  gap: 50px;
+}
+
+.tabs span.active {
+  color: #666;
+  border-bottom: 2px solid #666;
+}
+
+.tabs span:hover {
+  color: #333;
+}
+
+/* Why to Invest Section */
+.invest-section {
+  margin-left:20px;
+  margin-top:50px;
+}
+
+.invest-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.invest-section ol {
+  margin-left: 1.2rem;
+  color: #444;
+}
+
+.invest-section li {
+  margin-bottom: 0.8rem;
+}
+
+/* Team Section */
+.team-section {
+  margin: 3rem 0;
+  margin-left:20px;
+}
+
+.team-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.team-card {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  /* box-shadow: 0 2px 6px rgba(0,0,0,0.08); */
+  transition: transform 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+}
+
+.team-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.team-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Closure Section */
+.closure-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: #f8fbff;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.closure-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.closure-section p {
+  max-width: 700px;
+  margin: 0 auto 1.2rem;
+  color: #555;
+}
+
+.gallery-placeholder {
+  border: 2px dashed #aaa;
+  border-radius: 8px;
+  padding: 2rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* FAQ Section */
+.faq-section {
+  margin: 3rem 0;
+  max-width: 800px;
+  margin-left: 20px;
+  /* margin-right: auto; */
+}
+
+.faq-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.faq-item:hover {
+  background: #f9f9f9;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.faq-answer {
+  margin-top: 0.8rem;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  display: none;
+}
+
+.faq-answer.open {
+  display: block;
+}
+
+/* Reviews Section */
+.reviews-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  margin-left:20px;
+}
+
+.reviews-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.review-card {
+  border-bottom: 1px solid #eee;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.review-content {
+  max-width: 80%;
+}
+
+.review-user {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.review-time {
+  font-size: 0.85rem;
+  color: #888;
+  margin-left: 0.5rem;
+}
+
+.review-title {
+  font-style: italic;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.review-author {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.review-stars {
+  color: gold;
+  font-size: 1.2rem;
+}
+
+.more-btn {
+  display: block;
+  margin: 2rem auto 0;
+  text-align: center;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.more-btn:hover {
+  color: #333;
+}

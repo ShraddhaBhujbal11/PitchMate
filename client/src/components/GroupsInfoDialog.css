@@ -10,7 +10,7 @@
 }
 
 .dialog-box {
-  background: #fff;
+  background: #fafafa;
   padding: 32px 28px;
   border-radius: 30px;
   max-width: 480px;
@@ -63,7 +63,7 @@
 }
 
 .checkbox input[type="checkbox"] {
-  accent-color: #3b82f6; /* modern blue checkmark */
+  accent-color: #0e5bd5; /* modern blue checkmark */
   width: 18px;
   height: 18px;
   cursor: pointer;

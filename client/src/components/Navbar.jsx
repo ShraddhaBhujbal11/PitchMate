@@ -1,59 +1,92 @@
 // src/components/Navbar.jsx
-import React from 'react';
- import { Link } from "react-router-dom";
-import './Navbar.css';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
-import { FaSearch, FaHome, FaUsers } from 'react-icons/fa';
-import { MdKeyboardArrowDown } from 'react-icons/md';
+import { FaSearch, FaHome, FaUsers } from "react-icons/fa";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import SearchComponent from "./SearchComponent"; // <-- import your Search component
 
 const Navbar = () => {
+  const [showSearch, setShowSearch] = useState(false);
+
   return (
-    <nav className="navbar">
-      <div className="navbar-left">
-        <h2 className="logo">Pitch<span>Mate</span></h2>
-        <div className="search-box">
-          <FaSearch className="search-icon" />
-          <input type="text" placeholder="Search" />
+    <>
+      <nav className="navbar">
+        <div className="navbar-left">
+          <h2 className="logo">
+            Pitch<span>Mate</span>
+          </h2>
+          <div className="search-box" onClick={() => setShowSearch(true)}>
+            <FaSearch className="search-icon" />
+            <input type="text" placeholder="Search" readOnly /> 
+            {/* readOnly so typing opens the component instead */}
+          </div>
         </div>
-      </div>
 
-      <ul className="navbar-menu">
-        <li className="active">
-           <Link to="/" className="nav-link">
-            Home <FaHome className="icon" />
-          </Link>
-        </li>
-        <li>
-          <Link to="/Network" className="nav-link">
-            Network <FaUsers className="icon" />
-          </Link>
-        </li>
-        <li>
-          <Link to="/HowItWorks" className="nav-link">
-          How it works <MdKeyboardArrowDown className="icon" />
-          </Link>
-          
-        </li>
-        <li>
-          
-          Events <MdKeyboardArrowDown className="icon" />
-          
-        </li>
-        <li>
-          About <MdKeyboardArrowDown className="icon" />
-        </li>
-      </ul>
+        <ul className="navbar-menu">
+          <li>
+            <NavLink
+              to="/home"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Home <FaHome className="icon" />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/Network"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Network <FaUsers className="icon" />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/HowItWorks"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              How it works <MdKeyboardArrowDown className="icon" />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/Events"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Events <MdKeyboardArrowDown className="icon" />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/About"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              About <MdKeyboardArrowDown className="icon" />
+            </NavLink>
+          </li>
+        </ul>
 
-      <div className="profile-image">
-       
+        <div className="profile-image">
+          <NavLink to="/profile">
+            <img src="/profile.jpeg" alt="Profile" />
+          </NavLink>
+        </div>
+      </nav>
 
-          <Link to="/profile">
-           <img src="/profile.jpeg" alt="Profile" />
-          </Link>
-
-        
-      </div>
-    </nav>
+      {/* Conditionally render search overlay */}
+      {showSearch && <SearchComponent onClose={() => setShowSearch(false)} />}
+    </>
   );
 };
 

@@ -1,0 +1,150 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body, html, .landing-app {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.landing-navbar {
+  position: absolute; /* sits on image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: transparent; /* no white background */
+  color: white;
+  z-index: 10;
+}
+
+.landing-logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #4263eb;
+}
+
+.landing-logo span {
+  
+  font-weight: bold;
+  font-size: 20px;
+  color:white;
+}
+
+.landing-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.landing-nav-links li {
+  cursor: pointer;
+}
+
+.landing-nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.landing-btn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.landing-sign-up {
+  background: #2540ab;
+  color: #fff;
+  border-radius: 22px;
+}
+
+.landing-log-in {
+  background: rgba(243, 240, 240, 0.932);
+  color:black;
+  border-radius: 22px;
+}
+
+/* Hero Section */
+.landing-hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.landing-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.landing-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.3); /* Dark overlay */
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Left-aligned text */
+.landing-hero-text {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+  max-width: 500px;
+  z-index: 2;
+}
+
+.landing-hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.landing-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.landing-btn.landing-primary {
+  background: #2540ab;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+/* NavLink styling */
+.landing-nav-link {
+  text-decoration: none;   /* no underline */
+  color: white;            /* default */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* hover effect */
+.landing-nav-link:hover {
+  color: #4263eb; /* accent */
+}
+
+/* active link */
+.landing-nav-link.active {
+  color: #4263eb;
+}

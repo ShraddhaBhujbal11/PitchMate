@@ -1,18 +1,19 @@
 /* HeroSection.css */
 
 .hero-section {
-  width: 100%;
-  height: 400px; /* Reduced from 100vh to a smaller fixed height */
-  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fbackground-banner&psig=AOvVaw0y6dPyHgYQKXo3kxpATofT&ust=1756556417052000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJiIu92AsI8DFQAAAAAdAAAAABAE'); /* Add your image path */
-  background-size: cover;
+  width: calc(100% - 40px); /* leave space for margins */
+  height: 400px;
+  background-image: url('/cover.png');
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  border-radius: 40px; /* More curved corners */
-  overflow: hidden; /* Ensures child content stays within curves */
+  border-radius: 40px;
+  overflow: hidden;
+  margin: 0 20px; /* equal 20px gap left + right */
 }
+
 
 .hero-overlay {
   width: 100%;

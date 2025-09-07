@@ -1,0 +1,142 @@
+/* Fullscreen dark overlay */
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* darker backdrop */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* ⬅️ center vertically & horizontally */
+  z-index: 9999;
+}
+
+/* Dialogue box container */
+.search-container {
+  width: 70%;             /* adjust size */
+  max-width: 700px;       /* cap size on large screens */
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  animation: fadeInScale 0.25s ease; /* smooth popup animation */
+}
+
+/* Small popup animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Header with input and close button */
+.search-header {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.close-button {
+  cursor: pointer;
+  font-size: 22px;
+  padding: 5px 12px;
+  transition: color 0.2s ease;
+}
+
+.close-button:hover {
+  color: #d00;
+}
+
+/* Content: filters + recent searches */
+.search-content {
+  display: flex;
+  min-height: 280px;
+}
+
+/* Filters */
+.filter-options {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 15px;
+  border-right: 1px solid #eee;
+}
+
+.filter-button {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.filter-button:hover {
+  background-color: #eaeaea;
+}
+
+/* Recent searches */
+.recent-searches-section {
+  flex: 1;
+  padding: 15px;
+}
+
+.recent-searches-section h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.recent-searches-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-searches-section li {
+  padding: 6px 0;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.recent-searches-section li:hover {
+  color: #007bff;
+}
+
+/* ✅ Responsive tweaks */
+@media (max-width: 768px) {
+  .search-container {
+    width: 95%;
+    max-width: none;
+  }
+
+  .search-content {
+    flex-direction: column;
+  }
+
+  .filter-options {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    grid-template-columns: 1fr; /* stack filters */
+  }
+}

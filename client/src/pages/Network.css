@@ -3,14 +3,14 @@
   font-family: "Inter", Arial, sans-serif;
   padding: 20px 40px;
   color: #000;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
 /* Tabs row */
 .network-tabs {
   display: flex;
   gap: 40px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #fafafa;
   margin-bottom: 40px;
  
 }
@@ -200,4 +200,52 @@
 .chat-area {
   flex: 1;
   padding: 10px;
+}
+
+/* Pitch style row */
+.message-item.pitches {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.message-item.pitches .avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.pitch-message {
+  display: grid;
+  grid-template-columns: 1fr 150px 150px; /* name/sub takes more space */
+  align-items: center;
+  gap: 24px; /* spacing between columns */
+  width: 100%;
+}
+
+.pitch-name {
+  font-weight: 600;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.pitch-sub {
+  font-size: 13px;
+  color: #666;
+}
+
+.pitch-role {
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}
+
+.pitch-status {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  text-align: right;
 }

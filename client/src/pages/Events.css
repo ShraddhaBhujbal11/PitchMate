@@ -1,0 +1,103 @@
+.events-page {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  background: white; /* page background white */
+  font-family: "Inter", sans-serif;
+  width: 100vw;
+    box-sizing: border-box;
+}
+
+.events-left {
+  flex: 1;
+  margin: 0; /* remove top/bottom margin to simplify height calculations */
+  padding-top: 40px; /* optional: adjust spacing from top */
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.events-left h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  margin-top:30px;
+  color: #222;
+}
+
+.events-left h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.event-item {
+  margin-bottom: 60px; /* extra space between events */
+  padding-bottom: 20px;
+}
+
+.event-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 18px;   /* space below title */
+  color: #222;
+}
+
+.event-date {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 16px;   /* space below date */
+}
+
+.event-type {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;   /* space below type */
+}
+
+.event-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;      /* more line spacing */
+  margin-top: 16px;
+  margin-bottom: 28px;   /* extra breathing room */
+}
+
+.register-btn {
+  margin-top: 20px;      /* bigger gap above button */
+  padding: 12px 44px;
+  border: none;
+  border-radius: 999px;
+  background: #2c6ed7;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #2563eb;
+}
+
+/* Right section: two images stacked vertically */
+.events-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;   /* stack images vertically */
+  justify-content: flex-start;
+  align-items: flex-end;    /* align images to the right */
+  gap: 0;                   /* remove extra gap; spacing handled in React */
+  margin: 0;
+  padding: 0;
+}
+
+/* Images style */
+.events-right img {
+  width: 100%;
+  object-fit: cover;
+  object-position: right; 
+  border-radius: 30px;
+  display: block;
+  max-width:100%;
+}

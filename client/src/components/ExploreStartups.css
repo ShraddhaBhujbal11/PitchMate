@@ -6,7 +6,6 @@
   font-size: 22px;
   margin-bottom: 30px;
   font-family: 'Inter', sans-serif;
-  
 }
 
 .startup-scroll-container {
@@ -14,6 +13,14 @@
   overflow-x: auto;
   gap: 16px;
   padding-bottom: 1rem;
+
+  /* Hide scrollbar but keep scrolling functional */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+.startup-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .startup-card {
