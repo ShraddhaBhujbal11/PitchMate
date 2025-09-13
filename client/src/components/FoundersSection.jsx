@@ -4,8 +4,8 @@ import NDAModal from './NDAModel.jsx';
 
 const founders = [
   {
-    img: "/profile.jpeg",
-    profile: '/liam.jpg',
+    img: "/profile1.jpg",
+    profile: '/profile.jpeg',
     name: 'Liam Carter Hayes',
     upvotes: 775,
     startup: 'Medly',
@@ -13,8 +13,8 @@ const founders = [
       'AI health assistant for rural clinics. Diagnoses, manages records & works offline in local languages. 500+ users in 3 villages.',
   },
   {
-    img: "/profile.jpeg",
-    profile: '/liam.jpg',
+    img: "/profile1.jpg",
+    profile: '/profile.jpeg',
     name: 'Liam Carter Hayes',
     upvotes: 775,
     startup: 'SkillSprout',
@@ -22,8 +22,8 @@ const founders = [
       'SkillSprout delivers 5-minute lessons. Learn fast, stay consistent. Grow a skill, one day at a time.',
   },
   {
-    img: "/profile.jpeg",
-    profile: '/liam.jpg',
+    img: "/profile1.jpg",
+    profile: '/profile.jpeg',
     name: 'Liam Carter Hayes',
     upvotes: 775,
     startup: 'SkillSprout',
@@ -43,7 +43,7 @@ const FoundersSection = () => {
 
   return (
     <div className="founders-section">
-      <h2>Founders for you</h2>
+      <h2 id="head">Founders for you</h2>
       <div className="founder-slider">
         {founders.map((founder, idx) => (
           <div className="founder-card" key={idx}>
@@ -56,7 +56,7 @@ const FoundersSection = () => {
                   <p>{founder.upvotes} Upvotes</p>
                 </div>
               </div>
-              <h3>
+              <h3 className="name">
                 {founder.startup} <span className="verified">✔</span>
               </h3>
               <p>{founder.description}</p>

@@ -1,4 +1,4 @@
-.dialog-overlay {
+.groups-dialog-overlay {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
@@ -9,11 +9,11 @@
   backdrop-filter: blur(3px);
 }
 
-.dialog-box {
+.groups-dialog-box {
   background: #fafafa;
   padding: 32px 28px;
   border-radius: 30px;
-  max-width: 480px;
+  max-width: 600px; /* increased width for more space */
   width: 100%;
   text-align: center;
   position: relative;
@@ -21,21 +21,21 @@
   animation: fadeIn 0.25s ease-out;
 }
 
-.dialog-box h2 {
-  font-size: 1rem;
+.groups-dialog-title {
+  font-size: 1.2rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 14px;
 }
 
-.dialog-box p {
+.groups-dialog-description {
   font-size: 0.95rem;
   line-height: 1.5;
   color: #555;
   margin-bottom: 24px;
 }
 
-.close-btn {
+.groups-dialog-close-btn {
   position: absolute;
   top: 14px;
   right: 18px;
@@ -48,11 +48,11 @@
   transition: color 0.2s;
 }
 
-.close-btn:hover {
+.groups-dialog-close-btn:hover {
   color: #000;
 }
 
-.checkbox {
+.groups-dialog-checkbox {
   margin-top: 10px;
   display: flex;
   align-items: center;
@@ -62,13 +62,14 @@
   color: #444;
 }
 
-.checkbox input[type="checkbox"] {
+.groups-dialog-checkbox input[type="checkbox"] {
   accent-color: #0e5bd5; /* modern blue checkmark */
   width: 18px;
   height: 18px;
   cursor: pointer;
 }
-.next-btn {
+
+.groups-dialog-next-btn {
   margin-top: 28px;
   padding: 12px 40px;
   border: none;
@@ -78,20 +79,20 @@
   transition: all 0.25s ease;
 }
 
-.next-btn.disabled {
+.groups-dialog-next-btn.disabled {
   background-color: #e5e7eb;
   color: #9ca3af;
   cursor: not-allowed;
 }
 
-.next-btn.active {
+.groups-dialog-next-btn.active {
   background-color: #3b82f6;
   color: #fff;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
 }
 
-.next-btn.active:hover {
+.groups-dialog-next-btn.active:hover {
   background-color: #2563eb;
 }
 

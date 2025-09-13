@@ -1,0 +1,109 @@
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.dialog-box {
+  background: #fafafa;
+  width: 800px;
+  max-width: 70%;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  font-family: "Inter", sans-serif;
+  height:85%;
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.step.active {
+  font-weight: 600;
+  color: #0E3386;
+}
+
+.dialog-content h3 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #333;
+  margin-top:30px;
+  text-align: left;
+  margin-left:10px;
+  font-family: 'Inter',sans-serif;
+}
+
+.dialog-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 6px;
+  display: block;
+  margin-top:15px;
+  text-align: left;
+}
+
+.dialog-input,
+.dialog-textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 14px;
+  background-color: #e6e5e5;
+}
+
+.dialog-textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-back {
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-next {
+  padding: 8px 20px;
+  background: #b3b9c9;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-next:hover {
+  background: #0E3386;
+}

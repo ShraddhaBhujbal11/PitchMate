@@ -9,7 +9,7 @@ function Landing() {
       {/* Hero Section with Navbar and Text */}
       <section className="landing-hero">
         <img
-          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf"
+          src="land.jpg"
           alt="team handshake"
           className="landing-hero-img"
         />

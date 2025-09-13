@@ -11,110 +11,110 @@ export default function GroupsPage() {
       <div className="groups-container">
         {/* Tabs */}
         <div className="chat-groups-toggle">
-        <button className="toggle active">Chat</button>
-        <button className="toggle">
-  Groups
-</button>
+          <button className="toggle active">Chat</button>
+          <button className="toggle">
+            Groups
+          </button>
 
-      </div>
+        </div>
 
         {/* Heading */}
         <h2 className="heading">Investor or founder groups for you</h2>
 
         {/* Groups Row */}
-       
-              
-          <div className="groups-row">
-                  <div className="group-container">
-    <div className="group-card">
-      <div className="group-top">
-        <img
-          src="profile.jpeg"
-          alt="The Capital Connect Investors Group"
-          className="group-avatar"
-        />
-        <div className="group-info">
-          <h3 className="group-title">The Capital Connect Investors Group</h3>
-          <p className="subtitle">Verified PitchMate Group</p>
-        </div>
-        <button className="join-btn">Join</button>
-      </div>
-    </div>
-    <div className="spots-info">
-      <div className="progress-bar">
-        <div className="progress" style={{ width: "35%" }}></div>
-      </div>
-      <p className="spots-left">Only 65 spots left</p>
-    </div>
-  </div>
-              <div className="group-container">
-    <div className="group-card">
-      <div className="group-top">
-        <img
-          src="profile.jpeg"
-          alt="The Capital Connect Investors Group"
-          className="group-avatar"
-        />
-        <div className="group-info">
-          <h3 className="group-title">The Capital Connect Investors Group</h3>
-          <p className="subtitle">Verified PitchMate Group</p>
-        </div>
-        <button className="join-btn">Join</button>
-      </div>
-    </div>
-    <div className="spots-info">
-      <div className="progress-bar">
-        <div className="progress" style={{ width: "35%" }}></div>
-      </div>
-      <p className="spots-left">Only 65 spots left</p>
-    </div>
-  </div>
-  <div className="group-container">
-    <div className="group-card">
-      <div className="group-top">
-        <img
-          src="profile.jpeg"
-          alt="The Capital Connect Investors Group"
-          className="group-avatar"
-        />
-        <div className="group-info">
-          <h3 className="group-title">The Capital Connect Investors Group</h3>
-          <p className="subtitle">Verified PitchMate Group</p>
-        </div>
-        <button className="join-btn">Join</button>
-      </div>
-    </div>
-    <div className="spots-info">
-      <div className="progress-bar">
-        <div className="progress" style={{ width: "35%" }}></div>
-      </div>
-      <p className="spots-left">Only 65 spots left</p>
-    </div>
-  </div>
 
-  <div className="group-container">
-    <div className="group-card">
-      <div className="group-top">
-        <img
-          src="profile.jpeg"
-          alt="Founders & Funders Founders Group"
-          className="group-avatar"
-        />
-        <div className="group-info">
-          <h3 className="group-title">Founders & Funders Founders Group</h3>
-          <p className="subtitle">Verified PitchMate Group</p>
+
+        <div className="groups-row">
+          <div className="group-container">
+            <div className="group-card">
+              <div className="group-top">
+                <img
+                  src="profile.jpeg"
+                  alt="The Capital Connect Investors Group"
+                  className="group-avatar"
+                />
+                <div className="group-info">
+                  <h3 className="group-title">The Capital Connect Investors Group</h3>
+                  <p className="subtitle">Verified PitchMate Group</p>
+                </div>
+                <button className="join-btn">Join</button>
+              </div>
+            </div>
+            <div className="spots-info">
+              <div className="progress-bar">
+                <div className="progress" style={{ width: "35%" }}></div>
+              </div>
+              <p className="spots-left">Only 65 spots left</p>
+            </div>
+          </div>
+          <div className="group-container">
+            <div className="group-card">
+              <div className="group-top">
+                <img
+                  src="profile.jpeg"
+                  alt="The Capital Connect Investors Group"
+                  className="group-avatar"
+                />
+                <div className="group-info">
+                  <h3 className="group-title">The Capital Connect Investors Group</h3>
+                  <p className="subtitle">Verified PitchMate Group</p>
+                </div>
+                <button className="join-btn">Join</button>
+              </div>
+            </div>
+            <div className="spots-info">
+              <div className="progress-bar">
+                <div className="progress" style={{ width: "35%" }}></div>
+              </div>
+              <p className="spots-left">Only 65 spots left</p>
+            </div>
+          </div>
+          <div className="group-container">
+            <div className="group-card">
+              <div className="group-top">
+                <img
+                  src="profile.jpeg"
+                  alt="The Capital Connect Investors Group"
+                  className="group-avatar"
+                />
+                <div className="group-info">
+                  <h3 className="group-title">The Capital Connect Investors Group</h3>
+                  <p className="subtitle">Verified PitchMate Group</p>
+                </div>
+                <button className="join-btn">Join</button>
+              </div>
+            </div>
+            <div className="spots-info">
+              <div className="progress-bar">
+                <div className="progress" style={{ width: "35%" }}></div>
+              </div>
+              <p className="spots-left">Only 65 spots left</p>
+            </div>
+          </div>
+
+          <div className="group-container">
+            <div className="group-card">
+              <div className="group-top">
+                <img
+                  src="profile.jpeg"
+                  alt="Founders & Funders Founders Group"
+                  className="group-avatar"
+                />
+                <div className="group-info">
+                  <h3 className="group-title">Founders & Funders Founders Group</h3>
+                  <p className="subtitle">Verified PitchMate Group</p>
+                </div>
+                <button className="join-btn">Join</button>
+              </div>
+            </div>
+            <div className="spots-info">
+              <div className="progress-bar">
+                <div className="progress" style={{ width: "20%" }}></div>
+              </div>
+              <p className="spots-left">Only 98 spots left</p>
+            </div>
+          </div>
         </div>
-        <button className="join-btn">Join</button>
-      </div>
-    </div>
-    <div className="spots-info">
-      <div className="progress-bar">
-        <div className="progress" style={{ width: "20%" }}></div>
-      </div>
-      <p className="spots-left">Only 98 spots left</p>
-    </div>
-  </div>
-</div>
 
         {/* My Group Messages */}
         <h2 className="heading my-groups-heading">My Group Messages</h2>

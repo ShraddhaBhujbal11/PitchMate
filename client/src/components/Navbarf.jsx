@@ -49,7 +49,14 @@ const Navbarf = () => {
             </NavLink>
           </li>
           <li>
-            My idea
+            <NavLink
+              to="/MyIdea"
+              className={({ isActive }) =>
+                isActive ? "founder-nav-link active" : "founder-nav-link"
+              }
+            >
+               MyIdea 
+            </NavLink>
           </li>
           <li>
             <NavLink

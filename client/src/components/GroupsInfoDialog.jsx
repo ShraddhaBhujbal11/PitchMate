@@ -1,33 +1,38 @@
 // GroupsInfoDialog.jsx
 import React, { useState } from "react";
 import "./GroupsInfoDialog.css";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 
 const GroupsInfoDialog = ({ open, onClose }) => {
   const [understood, setUnderstood] = useState(false);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   const handleNextClick = () => {
     if (understood) {
-      onClose(); // Close the dialog
-      navigate('/groups'); // Navigate to the groups page
+      onClose();
+      navigate("/groups");
     }
   };
 
   if (!open) return null;
 
   return (
-    <div className="dialog-overlay">
-      <div className="dialog-box">
-        <button className="close-btn" onClick={onClose}>×</button>
-        <h2>In case you don’t understand Groups section</h2>
-        <p>
-          Join investor, founder, or mixed groups to meet new people and expand your network.
-          Investors can join founder groups, and founders can connect directly with investors.
-          You can always check the About section on the Navigation bar.
+    <div className="groups-dialog-overlay">
+      <div className="groups-dialog-box">
+        <button className="groups-dialog-close-btn" onClick={onClose}>
+          ×
+        </button>
+        <h2 className="groups-dialog-title">
+          In case you don’t understand Groups section
+        </h2>
+        <p className="groups-dialog-description">
+          Join investor, founder, or mixed groups to meet new people and expand
+          your network. Investors can join founder groups, and founders can
+          connect directly with investors. You can always check the About
+          section on the Navigation bar.
         </p>
 
-        <label className="checkbox">
+        <label className="groups-dialog-checkbox">
           <input
             type="checkbox"
             checked={understood}
@@ -37,9 +42,11 @@ const GroupsInfoDialog = ({ open, onClose }) => {
         </label>
 
         <button
-          className={`next-btn ${understood ? "active" : "disabled"}`}
+          className={`groups-dialog-next-btn ${
+            understood ? "active" : "disabled"
+          }`}
           disabled={!understood}
-          onClick={handleNextClick} // Use the new handler
+          onClick={handleNextClick}
         >
           Next
         </button>

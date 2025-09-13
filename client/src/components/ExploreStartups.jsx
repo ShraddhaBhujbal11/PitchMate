@@ -11,7 +11,9 @@ const startupCategories = [
 
 const ExploreStartups = () => {
   return (
+     
     <div className="explore-startups-section">
+      <hr className="line"></hr>
       <h2>Explore Startups Beyond Tech</h2>
       <div className="startup-scroll-container">
         {startupCategories.map((item, i) => (
