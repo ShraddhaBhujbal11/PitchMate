@@ -3,10 +3,10 @@ import React from 'react';
 import './ExploreStartups.css';
 
 const startupCategories = [
-  { title: "New and Promising", img: "/startup2.jpeg" },
-  { title: "Slow Growth Believer", img: "/startup2.jpeg" },
-  { title: "Problem Solvers", img: "/startup3.png" },
-  { title: "Offline-First", img: "/startup4.jpeg" },
+  { title: "New and Promising", img: "/startup3.jpg" },
+  { title: "Slow Growth Believer", img: "/startup3.jpg" },
+  { title: "Problem Solvers", img: "/startup3.jpg" },
+  { title: "Offline-First", img: "/startup3.jpg" },
 ];
 
 const ExploreStartups = () => {
