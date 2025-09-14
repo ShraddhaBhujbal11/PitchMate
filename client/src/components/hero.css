@@ -3,7 +3,7 @@
 .hero-section {
   width: calc(100% - 40px); /* leave space for margins */
   height: 400px;
-  background-image: url('/cover.png');
+  background-image: url('/land.jpg');
   background-position: center;
   display: flex;
   align-items: center;

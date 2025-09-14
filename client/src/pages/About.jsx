@@ -27,7 +27,7 @@ const AboutPage = () => {
           <div className="about-left">
             <div className="about-details">
               <h2>About</h2>
-              <h4>What is PitchMate?</h4>
+              <h2>What is PitchMate?</h2>
               <p>
                 PitchMate is a smart networking and fundraising platform that connects startup founders with the right
                 investors. It helps founders showcase their startups through detailed profiles, while investors can discover, connect, and collaborate with ventures that match their interests —
@@ -50,7 +50,7 @@ const AboutPage = () => {
           <h2>Story of PitchMate</h2>
           <p>"Started in 2025 by a team of founders who faced the same problem.."</p>
            <h2>PitchMate values</h2>
-            <h3>1. Transparency</h3>
+            <h3 >1. Transparency</h3>
             <p>
               We believe in clear, honest communication between founders and investors — no hidden agendas, just real connections.
             </p>

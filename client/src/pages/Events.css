@@ -2,12 +2,17 @@
   display: flex;
   gap: 40px;
   padding: 40px;
-  background: white; /* page background white */
+  background: #fafafa; /* page background white */
   font-family: "Inter", sans-serif;
   width: 100vw;
     box-sizing: border-box;
 }
-
+.events-left p {
+  line-height: 1.6;
+  color: #333;
+  margin-top: 10px;
+  font-family: "Inter",sans-serif;
+}
 .events-left {
   flex: 1;
   margin: 0; /* remove top/bottom margin to simplify height calculations */
@@ -16,12 +21,12 @@
   box-sizing: border-box;
 }
 
-.events-left h1 {
+.events-left h2 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 40px;
   margin-top:30px;
-  color: #222;
+  color: #333;
 }
 
 .events-left h3 {
@@ -68,7 +73,7 @@
   padding: 12px 44px;
   border: none;
   border-radius: 999px;
-  background: #2c6ed7;
+  background: #0643a5;
   color: white;
   font-size: 1rem;
   font-weight: 500;
@@ -77,7 +82,7 @@
 }
 
 .register-btn:hover {
-  background: #2563eb;
+  background: #0643a5;
 }
 
 /* Right section: two images stacked vertically */
@@ -95,9 +100,19 @@
 /* Images style */
 .events-right img {
   width: 100%;
-  object-fit: cover;
-  object-position: right; 
+  object-position: right;
   border-radius: 30px;
   display: block;
-  max-width:100%;
+  max-width: 100%;
+  /* ❌ remove this line */
+  /* height: 600px; */
+  object-fit: cover; /* ✅ keeps the image filling its box nicely */
+  margin-bottom:20px;
+  margin-top:10px;
+}
+
+.events-left hr {
+  margin: 20px 0;   /* adjust spacing if needed */
+  border: 1px solid #ccc;
+  margin-top:50px;
 }

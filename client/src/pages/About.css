@@ -1,5 +1,5 @@
 html,body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -28,7 +28,8 @@ html,body {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: left;
-  margin-top: 40px;
+  margin-top: 30px;
+  color:#333;
 }
 
 .about-navigation button {
@@ -63,7 +64,7 @@ margin-left: 20px;
 }
 
 .about-details h1 {
-  margin-top: 0;
+ 
   font-size: 2.5rem;
   font-weight: bold;
   color: #212529;
@@ -74,14 +75,37 @@ margin-left: 20px;
   font-size: 1.5rem;
   font-weight: 600;
   color: #333;
-  margin-top: 60px;
+  margin-top: 40px;
+  font-family: "Inter",sans-serif;
+}
+.about-details h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 40px;
+  font-family: "Inter",sans-serif;
+}
+
+.founding-team h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 40px;
+  font-family: "Inter",sans-serif;
+}
+
+.founding-team h3{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 40px;
   font-family: "Inter",sans-serif;
 }
 
 .about-details p {
   line-height: 1.6;
   color: #555;
-  margin-top: 30px;
+  margin-top: 50px;
   font-family: "Inter",sans-serif;
 }
 

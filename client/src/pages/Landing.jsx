@@ -1,9 +1,11 @@
 import React from "react";
 import "./Landing.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 function Landing() {
+  const navigate = useNavigate();
   return (
     <div className="landing-app">
       {/* Hero Section with Navbar and Text */}
@@ -40,7 +42,7 @@ function Landing() {
           </ul>
 
           <div className="landing-nav-buttons">
-            <button className="landing-btn landing-sign-up">Sign up</button>
+            <button className="landing-btn landing-sign-up" onClick={() => navigate("/Signup")}>Sign up</button>
             <button className="landing-btn landing-log-in">Log in</button>
           </div>
         </nav>
@@ -49,8 +51,18 @@ function Landing() {
         <div className="landing-hero-text">
           <h1>Build it. Back it. Believe in it.</h1>
           <div className="landing-buttons">
-            <button className="landing-btn landing-primary">Investor</button>
-            <button className="landing-btn landing-primary">Founder</button>
+            <button
+              className="landing-btn landing-primary"
+              onClick={() => navigate("/home")}
+            >
+              Investor
+            </button>
+            <button
+              className="landing-btn landing-primary"
+              onClick={() => navigate("/homef")}
+            >
+              Founder
+            </button>
           </div>
         </div>
       </section>

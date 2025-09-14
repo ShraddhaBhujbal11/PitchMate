@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
-import Navbar from "../components/Navbar"; 
-import demoChartTop from "../assets/demo-chart.jpg"; 
-import demoChartBottom from "../assets/demo-chart.jpg"; 
+import Navbar from "../components/Navbar";
+import demoChartTop from "../assets/demo-chart.jpg";
+import demoChartBottom from "../assets/demo-chart.jpg";
 import "./Events.css";
 
 export default function Events() {
@@ -49,34 +49,28 @@ export default function Events() {
     }
   ];
 
-  // Calculate image heights
-useEffect(() => {
-  function updateImageHeights() {
-    if (hrRef.current && leftRef.current) {
-      const leftTop = leftRef.current.offsetTop; // top of container relative to parent
-      const hrTop = hrRef.current.offsetTop;     // top of HR relative to container
-      const hrHeight = hrRef.current.offsetHeight; // height of HR including line
+  useEffect(() => {
+    function updateImageHeights() {
+      if (hrRef.current && leftRef.current) {
+        const leftTop = leftRef.current.offsetTop;
+        const hrTop = hrRef.current.offsetTop;
 
-      // Top image = from top of left container to bottom of HR
-      const top = hrTop + hrHeight - leftTop;
+        // Top image = up to the START of the hr (not including hr's height)
+        const top = hrTop - leftTop;
 
-      // Bottom image = remaining height
-      const bottom = leftRef.current.offsetHeight - top;
+        // Bottom image = remaining height (including the hr area itself)
+        const bottom = leftRef.current.offsetHeight - top;
 
-      setTopHeight(top);
-      setBottomHeight(bottom);
+        setTopHeight(top);
+        setBottomHeight(bottom);
+      }
     }
-  }
 
-  updateImageHeights();
-  window.addEventListener("resize", updateImageHeights);
-  return () => window.removeEventListener("resize", updateImageHeights);
-}, []);
+    updateImageHeights();
+    window.addEventListener("resize", updateImageHeights);
+    return () => window.removeEventListener("resize", updateImageHeights);
+  }, []);
 
-
-
-
-   
 
 
   return (
@@ -87,7 +81,7 @@ useEffect(() => {
         {/* Left section: multiple events */}
         <div className="events-left">
           <h2>Events</h2>
-          <p>Upcoming events</p>
+          <h3>Upcoming events</h3>
 
           {events.map((event, index) => (
             <div key={index} className="event-item">
